@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KMU-XO-fvH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KMU-XO-fvH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -45,21 +45,33 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zr5-GH-4Nh">
                                 <rect key="frame" x="20" y="156" width="560" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn7-w4-Xj9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wn7-w4-Xj9">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Jv-zv-jIn"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5b-an-Qmx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5b-an-Qmx">
                                         <rect key="frame" x="140" y="0.0" width="140" height="30"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJ3-8L-Cxj"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ7-eL-vp8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ7-eL-vp8">
                                         <rect key="frame" x="280" y="0.0" width="140" height="30"/>
                                         <state key="normal" title="x"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cT-ID-dFo"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjr-zP-tRH">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjr-zP-tRH">
                                         <rect key="frame" x="420" y="0.0" width="140" height="30"/>
                                         <state key="normal" title="/"/>
+                                        <connections>
+                                            <action selector="onOperationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJu-tO-Wgo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -78,6 +90,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KQg-6u-1yq"/>
+                    <connections>
+                        <outlet property="operandOne" destination="tFC-k1-X9w" id="QoP-7U-hOC"/>
+                        <outlet property="operandTwo" destination="CKQ-1O-8dc" id="Gyz-JU-5st"/>
+                        <outlet property="operationLabel" destination="H3Z-9Y-cn7" id="5Ui-5a-Grx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
