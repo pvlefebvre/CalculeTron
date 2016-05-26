@@ -29,13 +29,13 @@
     
     self.operationLabel.text = sender.currentTitle;
     if ([self.operationLabel.text isEqualToString:@"+"]) {
-        
+        self.title = [NSString stringWithFormat:@"%.2f", op1 + op2];
     } else if ([self.operationLabel.text isEqualToString:@"-"]) {
-        
+        self.title = [NSString stringWithFormat:@"%.2f", op1 - op2];
     } else if ([self.operationLabel.text isEqualToString:@"x"]) {
-        
+        self.title = [NSString stringWithFormat:@"%.2f", op1 * op2];
     }else {
-        
+        self.title = [NSString stringWithFormat:@"%.2f", op1 / op2];
     }
 
 }

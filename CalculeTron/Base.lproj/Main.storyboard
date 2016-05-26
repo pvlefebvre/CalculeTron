@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Result-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -89,7 +89,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Zr5-GH-4Nh" secondAttribute="trailing" id="zdh-Zj-Vlc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KQg-6u-1yq"/>
+                    <navigationItem key="navigationItem" title="Result" id="KQg-6u-1yq"/>
                     <connections>
                         <outlet property="operandOne" destination="tFC-k1-X9w" id="QoP-7U-hOC"/>
                         <outlet property="operandTwo" destination="CKQ-1O-8dc" id="Gyz-JU-5st"/>
