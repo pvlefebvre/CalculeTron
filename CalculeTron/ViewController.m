@@ -26,6 +26,18 @@
     
     double op1 = self.operandOne.text.doubleValue;
     double op2 = self.operandTwo.text.doubleValue;
+    
+    self.operationLabel.text = sender.currentTitle;
+    if ([self.operationLabel.text isEqualToString:@"+"]) {
+        
+    } else if ([self.operationLabel.text isEqualToString:@"-"]) {
+        
+    } else if ([self.operationLabel.text isEqualToString:@"x"]) {
+        
+    }else {
+        
+    }
+
 }
 
 @end
